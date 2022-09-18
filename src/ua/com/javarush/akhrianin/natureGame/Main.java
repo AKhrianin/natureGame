@@ -19,15 +19,13 @@ public class Main {
         GameProperties gameProperties = new GameProperties();
         LifeInitializer lifeInitializer = new LifeInitializer();
 
-        //initialization of life
         for (int islandLength = 0; islandLength < GameProperties.ISLAND_LENGTH; islandLength++) {
             for (int islandHeight = 0; islandHeight < GameProperties.ISLAND_HEIGHT; islandHeight++) {
                 island.getIsland()[islandLength][islandHeight] = lifeInitializer.lifeInitializer();
             }
         }
 
-
-        for (int dayCounter = 0; dayCounter < 50; dayCounter++) {
+        for (int dayCounter = 0; dayCounter < GameProperties.ISLAND_DAY_CYCLE; dayCounter++) {
             for (int islandLength = 0; islandLength < GameProperties.ISLAND_LENGTH; islandLength++) {
                 for (int islandHeight = 0; islandHeight < GameProperties.ISLAND_HEIGHT; islandHeight++) {
 

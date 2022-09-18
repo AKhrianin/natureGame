@@ -1,6 +1,7 @@
 package ua.com.javarush.akhrianin.natureGame.island;
 
 
+import org.jetbrains.annotations.NotNull;
 import ua.com.javarush.akhrianin.natureGame.npc.Animal;
 import ua.com.javarush.akhrianin.natureGame.npc.BasicNpc;
 
@@ -15,7 +16,7 @@ public class Island {
         return island;
     }
 
-    public Boolean validateMaxCount(List<BasicNpc> list, Animal animal) {
+    public Boolean validateMaxCount(List<BasicNpc> list, @NotNull Animal animal) {
         return list.stream().filter(x -> x.getName().equals(animal.getName())).count() < animal.getMaxCount();
     }
 

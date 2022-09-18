@@ -7,6 +7,7 @@ public class GameProperties {
 
     public static final int ISLAND_LENGTH = 10;
     public static final int ISLAND_HEIGHT = 10;
+    public static final int ISLAND_DAY_CYCLE = 50;
 
     public static final Double SATIETY_REDUCTION_COEFFICIENT = 0.25;
 
